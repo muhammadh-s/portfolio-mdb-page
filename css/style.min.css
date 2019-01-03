@@ -10,10 +10,54 @@
   font-size: 5rem
 }
 
+.solid {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.left-ic {
+  height: 58px;
+  width: 58px;
+  position: absolute;
+  top: 30px;
+  left: 115px;
+  padding: 10px;
+}
+.right-button {
+  position: absolute;
+  top: 30px;
+  right: 115px;
+  padding: 10px;
+}
 
 .background{
   background: #1A2980;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: 1890px 2000px;
+}
 
+html { width: 100%; height: 100%; }
+body {
+  position: relative;
+  width: 100%; height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.view {
+    margin-top: -56px;
+}
+.navbar {
+    z-index: 1;
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #1A2980;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1A2980;
+    }
 }
